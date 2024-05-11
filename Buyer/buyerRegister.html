@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <title>Smart Shoppers</title>
+  <link rel="stylesheet" href="buyer.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <center>
+    <h1>Smart Shoppers</h1>
+    <h2>Register</h2>
+    <button style= "color: white;"><a href="./buyerMenu.html">Buyer's Main Menu</a></button>
+    <br><br>
+    <hr>
+    <form">
+      <div class="container">
+        <h2>Register as a Buyer</h2>
+        <hr>
+        <div>
+        <label for="buyerName"><b>Buyer Name</b></label><br>
+        <input type="text" id="registerBuyerName" placeholder="Enter Your Name"required>
+        </div>
+        <br>
+        <div>
+        <label for="phoneNo"><b>Phone Number</b></label><br>
+        <input type="text"  id="registerPhoneNumber" placeholder="Enter Your Phone Number"required>
+        </div>
+        <br>
+        <div>
+        <label for="shippingAddress"><b>Shipping Address</b></label><br>
+        <input type="text"  id="registerShippingAddress" placeholder="Enter Your Shipping Address"required>
+        </div>
+        <hr>
+      <div> 
+        <button id="registerAsBuyer" class="registerbtn">Register</button>
+        </div>
+      </div>
+    </form>
+  </center>
+</body>
+
+<div id="log" style="text-align: center;"></div>	
+
+<!-- The legacy-web3 script must run BEFORE your other scripts. -->
+<script src="https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js"></script>
+<script src="/web3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src ="buyer.js"></script>	
+
+<footer style="text-align: right;">
+</footer>
+
+</html>

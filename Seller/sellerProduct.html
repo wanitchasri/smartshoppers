@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <title>Smart Shoppers</title>
+  <link rel="stylesheet" href="seller.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <center>
+    <h1>Smart Shoppers</h1>
+    <h2>Products</h2>
+    <button style= "color: white;"><a href="./sellerMenu.html">Seller's Main Menu</a></button>
+    <br><br>
+    <hr>
+    <form">
+      <div class="container">
+        <h2>Add New Product</h2>
+        <hr>
+        <div>
+        <label for="addProductID"><b>Product ID</b></label><br>
+        <input type="text" id="addProductID" placeholder="Enter Your Product ID"required>
+        </div>
+        <br>
+        <div>
+        <label for="addProductName"><b>Product Name</b></label><br>
+        <input type="text"  id="addProductName" placeholder="Enter Your Product Name"required>
+        </div>
+        <br>
+        <div>
+        <label for="addPrice"><b>Price</b></label><br>
+        <input type="number"  id="addPrice" placeholder="Enter Your Price"required>
+        </div>
+        <hr>
+        <div> 
+        <button id="addNewProduct" class="productbtn">Add</button>
+        </div>
+      </div>
+    </form>
+  </center>
+</body>
+
+<div id="log" style="text-align: center;"></div>	
+
+<!-- The legacy-web3 script must run BEFORE your other scripts. -->
+<script src="https://unpkg.com/@metamask/legacy-web3@latest/dist/metamask.web3.min.js"></script>
+<script src="/web3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src ="seller.js"></script>	
+
+<footer style="text-align: right;">
+</footer>
+
+</html>
